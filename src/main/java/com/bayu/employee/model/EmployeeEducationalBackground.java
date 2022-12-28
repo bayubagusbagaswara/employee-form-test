@@ -21,15 +21,25 @@ public class EmployeeEducationalBackground {
     @GeneratedValue(generator = "system-uuid")
     private String id;
 
+    @Column(name = "last_level_of_education")
+    private String lastLevelOfEducation;
+
+    @Column(name = "university_name")
+    private String universityName;
+
+    @Column(name = "major")
+    private String major;
+
+    @Column(name = "graduation_year")
+    private String graduationYear;
+
+    @Column(name = "ipk")
+    private String ipk;
+
     @ManyToOne
     @JoinColumn(name = "id_employee", foreignKey = @ForeignKey(name = "fk_educational_background_id_employee"), referencedColumnName = "id")
     private Employee employee;
 
-    // jenjangPendidikanTerakhir
-    // namaInstitusiAkademik
-    // jurusan
-    // tahunLulus
-    // IPK
 }
 
 
