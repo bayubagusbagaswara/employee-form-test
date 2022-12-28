@@ -24,4 +24,7 @@ public class EmployeeTrainingHistory extends UserDateAudit {
     @JoinColumn(name = "id_employee", foreignKey = @ForeignKey(name = "fk_training_history_id_employee"), referencedColumnName = "id")
     private Employee employee;
 
+    // namaKursus
+    // sertifikat
+    // tahun
 }
