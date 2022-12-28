@@ -1,6 +1,5 @@
 package com.bayu.employee.model;
 
-import com.bayu.employee.model.audit.UserDateAudit;
 import com.bayu.employee.model.enumerator.Gender;
 import com.bayu.employee.model.enumerator.ReadyToBePlaceInAll;
 import lombok.*;
@@ -10,14 +9,13 @@ import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Set;
 
-@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "employees")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employee extends UserDateAudit {
+public class Employee {
 
     @Id
     @GenericGenerator(name = "system-uuid", strategy = "uuid2")
@@ -58,7 +56,7 @@ public class Employee extends UserDateAudit {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "phone_numer")
+    @Column(name = "phone_number")
     private String phoneNumber;
 
     @Column(name = "closest_contact")
