@@ -23,4 +23,9 @@ public class EmployeeWorkExperience extends UserDateAudit {
     @ManyToOne
     @JoinColumn(name = "id_employee", foreignKey = @ForeignKey(name = "fk_work_experience_id_employee"), referencedColumnName = "id")
     private Employee employee;
+
+    // namaPerusahaan
+    // posisiTerakhir
+    // pendapatanTerakhir
+    // tahun
 }
