@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 
 @Controller
 @RequiredArgsConstructor
-public class AuthenticationController {
+public class AuthController {
 
     private final UserService userService;
 
