@@ -3,7 +3,6 @@ package com.bayu.employee.model;
 import com.bayu.employee.model.audit.UserDateAudit;
 import com.bayu.employee.model.enumerator.Gender;
 import com.bayu.employee.model.enumerator.ReadyToBePlaceInAll;
-import com.bayu.employee.model.enumerator.RoleName;
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
