@@ -37,3 +37,29 @@
 - Setelah mendaftar maka employee bisa login
 - Employee baru bisa login
 - Lalu employee akan menginputkan biodata dirinya sendiri
+
+# SAMPLE DATA USER
+- Role Admin
+
+```json
+{
+  "email": "admin@mail.com",
+  "password": "admin123"
+}
+```
+- Role User 1
+
+```json
+{
+  "email": "albert@mail.com",
+  "password": "albert123"
+}
+```
+- Role User 2
+
+```json
+{
+  "email": "jack@mail.com",
+  "password": "jack123"
+}
+```
