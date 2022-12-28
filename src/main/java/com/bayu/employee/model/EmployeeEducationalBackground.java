@@ -24,6 +24,12 @@ public class EmployeeEducationalBackground {
     @ManyToOne
     @JoinColumn(name = "id_employee", foreignKey = @ForeignKey(name = "fk_educational_background_id_employee"), referencedColumnName = "id")
     private Employee employee;
+
+    // jenjangPendidikanTerakhir
+    // namaInstitusiAkademik
+    // jurusan
+    // tahunLulus
+    // IPK
 }
 
 
