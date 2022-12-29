@@ -10,7 +10,7 @@ public class AuthController {
 
     private final UserService userService;
 
-    // handle to register user (create a new user)
+
 
     // handle to login user
 
