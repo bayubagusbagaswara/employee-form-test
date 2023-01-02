@@ -4,10 +4,7 @@ import com.bayu.employee.model.Employee;
 import com.bayu.employee.service.EmployeeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping("/employee")
@@ -39,9 +36,14 @@ public class EmployeeController {
 
     // menampilkan form untuk Add Employee Work Experience
 
-    // melalukan aksi P
+    // melalukan aksi penyimpanan Employee Work Experience
+
 
     // handle to edit employee
+    @PutMapping("/edit-employee")
+    public String editEmployee(String id, @ModelAttribute("employee") Employee employee) {
+        return "";
+    }
 
     // handle to get employee by id
 
